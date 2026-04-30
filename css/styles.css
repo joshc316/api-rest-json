@@ -1,0 +1,67 @@
+body {
+    background: #f4f6f8;
+}
+
+/* LOADER */
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ccc;
+    border-top: 6px solid blue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* CARDS */
+.card-hover {
+    transition: 0.3s;
+}
+
+.card-hover:hover {
+    transform: scale(1.03);
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .navbar {
+    background: black !important;
+}
+.card-hover {
+    transition: 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+}
+
+h3, h4 {
+    font-weight: bold;
+}
+.badge {
+    font-size: 0.9em;
+    padding: 8px;
+}
